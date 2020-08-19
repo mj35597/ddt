@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WeLcOmE tO DDT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <style>
+    html {scroll-behavior: smooth;}
+
+  #section2{height: 780px;}
+
+  #section3{height: 2255px;}          
+  
+            
+    body {
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Roboto', sans-serif
+      -webkit-font-smoothing: 
+      antialiased;
+
+    }
+    body,h1,p{margin:0; padding:0;}
+    header,section{background:black;}
+    .wrap{ width: 800px; margin:auto;  height:100%; position: relative;}
+    header .wrap, section .wrap{width:100%;}
+
+    header .wrap{ 
+      background:url(front.jpg); 
+      background-size: cover;
+      background-position: -40px -10px;
+      height:800px;}
+
+    header .wrap h1{
+      font-size: 80px;
+      color:white; 
+      position: absolute; 
+      top:250px; 
+      left:calc(50% - 420px);
+    }
+
+    .button { 
+      position: absolute;
+      border: 2px solid #DCDCDC; 
+      color: #DCDCDC;
+      text-decoration: none;
+      padding: 15px 40px;
+      bottom: 910px;
+      left: 635px;
+      z-index: 90;
+      font-size: 38px;
+      margin: 4px 2px;
+      background-color: #2d184d; 
+      transition-duration: 0.4s;
+      cursor: pointer;
+
+    }
+
+    .button:hover {
+      background-color: white;
+      color: #2d184d;
+    }
+
+    h3{
+      position: absolute;
+      left: 640px;
+      color: #bc3ea1;
+      font-size: 30px;
+      bottom: 85px;
+      padding: 4px 30px;
+      background-color: #FDFFD9; 
+      text-decoration: none;
+    }
+
+    h4{
+      font-family: 'Nanum Myeongjo', serif;
+      font-family: 'Song Myung', serif;
+      position: absolute;
+      left: 743px;
+      color: yellow;
+      font-size: 18px;
+      bottom: 195px;
+      text-decoration: none;
+      opacity: 0%;
+      z-index: 70;
+    }
+
+    h1{ 
+      font-family: 'Nanum Myeongjo', serif;
+      font-family: 'Song Myung', serif;
+      position: absolute;
+      left: 470px;
+      top: 15%;
+      color: #2d184d;
+      line-height: 1.4;
+      font-size: 18px;
+      z-index: 100
+    }
+  
+
+    img{ position: absolute; }
+    .bold{color:white;}
+    .i1{top:0px; position: center;}
+    .s1 .wrap{height: 900px}
+  </style>
+</head>
+<body>
+    <header>
+      <div class="wrap">
+        <a href="#section2"><h3>WHAT IS DDT?</h3></a>
+      </div>
+    </header>
+
+    <section class="section2">
+      <div class="wrap" id="section2">
+        <a href="#section3"><h4>click</h4></a>
+        <img src="s2.jpg" class="i1" width="auto" height="793px">
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="wrap" id="section3">
+        <h1><form action="/action_page.php" align="left">
+          <label for="fname">*수면자의 성함</label>&nbsp;
+          <input type="text" id="fname" name="fname"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="lname">*나이</label> &nbsp;
+          <input type="text" id="lname" name="lname">
+          <br><br><br>
+          <label for="lname">*수면 직전 증상자에게 어떤 스트레스가 있었나요?<br> 혹은 평소에 어떤것에 대해 스트레스를 받았나요?</label><br>
+          <textarea name="message" rows="10" cols="80">
+          </textarea><br><br>
+          <label for="lname">*장기 수면 외의 또 다른 증상이 있나요?</label><br>
+          <textarea name="message" rows="10" cols="80">
+          </textarea><br><br>
+          <label for="lname">*수면자의 주소</label><br>
+          <input type="text" id="address" name="address" size="50" placeholder="address">
+          <br><br>
+          <label for="lname">*보호자 연락처</label><br>
+          <input type="text" id="phone" name="phone" size="50" rows="5" placeholder="Phone number">
+        </form></h1>
+
+        <img src="s3.jpg" class="i1" width="auto" height="2255px">
+        <button class="button" onclick="alert('성공적으로 접수되었습니다.')">SUBMIT
+        </button>
+        
+      </div>
+    </section>
+
+</body>
+</html>
